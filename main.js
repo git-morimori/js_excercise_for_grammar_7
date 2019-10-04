@@ -42,9 +42,9 @@ console.log(array2[1][0]);
 //   - 配列の末尾に値を追加する際には、配列の組み込みメソッドである「push」を使う
 //   - 値を配列の末尾に追加する前と追加した後の結果をconsole.logで出力して、'コメント4'が追加されていることを確認する
 const array3 = ['コメント1', 'コメント2', 'コメント3'];
-console.log(array3);
+console.log('末尾に値を追加する前 : ', array3);
 array3.push('コメント4');
-console.log(array3);
+console.log('末尾に値を追加した後 : ', array3);
 
 // 課題8: 新しい配列を作り、配列の組み込みメソッドを使って、配列の末尾の値を取り除く
 //   - 変数名はarray4とする
@@ -54,10 +54,10 @@ console.log(array3);
 //   - 値を配列の末尾から取り除く前と取り除いた後の結果をconsole.logで出力する
 //   - 変数「poppedValue」をconsole.logで出力して、'タスク3'が表示されることを確認する
 const array4 = ['タスク1', 'タスク2', 'タスク3'];
-console.log(array4);
+console.log('末尾から値を取り除く前 : ', array4);
 const poppedValue = array4.pop();
-console.log(array4);
-console.log(poppedValue);
+console.log('末尾から値を取り除いた後 : ', array4);
+console.log('poppedValueは「タスク3」であるはず : ', poppedValue);
 
 // 課題9: 新しい配列を作り、配列の組み込みメソッドを使って、配列の先頭に値を追加する
 //   - 変数名はarray5とする
@@ -66,9 +66,9 @@ console.log(poppedValue);
 //   - 配列の先頭に値を追加する際には、配列の組み込みメソッドである「unshift」を使う
 //   - 値を配列の先頭に追加する前と追加した後の結果をconsole.logで出力して、'最優先タスク' が追加されていることを確認する
 const array5 = ['タスク1', 'タスク2', 'タスク3'];
-console.log(array5);
+console.log('先頭に値を追加する前 : ', array5);
 array5.unshift('最優先タスク');
-console.log(array5);
+console.log('先頭に値を追加した後 : ', array5);
 
 // 課題10: 新しい配列を作り、配列の組み込みメソッドを使って、配列の先頭の値を取り除く
 //   - 変数名はarray6とする
@@ -78,7 +78,7 @@ console.log(array5);
 //   - 値を配列の先頭から取り除く前と取り除いた後の結果をconsole.logで出力する (出力結果が異なることを確認する)
 //   - 変数「shiftedValue」をconsole.logで出力して、'タスク1' が表示されることを確認する
 const array6 = ['タスク1', 'タスク2', 'タスク3'];
-console.log(array6);
+console.log('先頭から値を取り除く前 : ', array6);
 const shiftedValue = array6.shift();
-console.log(array6);
-console.log(shiftedValue);
+console.log('先頭から値を取り除いた後 : ', array6);
+console.log('shiftedValueは「タスク1」であるはず : ', shiftedValue);
